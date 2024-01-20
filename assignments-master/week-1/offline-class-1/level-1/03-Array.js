@@ -5,7 +5,7 @@
 
 // Run each function to see the output, play and learn by doing.
 
-// push()
+//1.push()
 function pushExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -23,7 +23,7 @@ function popExample(arr) {
 }
 popExample([1, 2, 3]);
 
-// shift()
+// shift() from front remove one 
 function shiftExample(arr) {
   console.log("Original Array:", arr);
 
@@ -32,7 +32,7 @@ function shiftExample(arr) {
 }
 shiftExample([1, 2, 3]);
 
-// unshift()
+// unshift() insert at the front
 function unshiftExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -50,7 +50,7 @@ function concatExample(arr1, arr2) {
 }
 concatExample([1, 2, 3], [4, 5, 6]);
 
-// forEach()
+// forEach() takes the function as a argument
 function forEachExample(arr) {
   console.log("Original Array:", arr);
 
@@ -60,7 +60,13 @@ function forEachExample(arr) {
 }
 forEachExample([1, 2, 3]);
 
-// map()
+const arr=[1,2,3];
+function logthing(str){
+  console.log(str)
+}
+arr.forEach(logthing)
+
+// map() 
 function mapExample(arr) {
   console.log("Original Array:", arr);
 
