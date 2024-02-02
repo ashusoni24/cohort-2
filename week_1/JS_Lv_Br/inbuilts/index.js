@@ -29,4 +29,20 @@
  console.log(numbers.indexOf(4));
  // searching in case of objects or references
  //1. we use call back functions
+// objects - search - find() - arrayname.find(function())
 
+let courses = [
+    {no:1, naam:'love'},{no:2, naam :'rahul'}
+];
+console.log(courses);
+
+let courses1 = courses.find(function(courses){
+    return courses.naam == 'love';
+});
+console.log(courses1);
+  
+//for combining two arrays
+let first = [1,2,3];
+let second = [4,5,6];
+let combined = first.concat(second);
+console.log(combineď);
