@@ -33,4 +33,72 @@
 //     console.log(user);
 // })
 
+// const promisefour = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         let error = false
+//         if(!error){
+//             resolve({username : "ashu", pass:"123"})
+//         }
+//         else{
+//             reject("wrong")
+//         }
+//     },1000)
+// })
+// promisefour
+// .then(function(user){
+//    console.log(user);
+//    return user.username
+// })
+// .then(function(username){
+//   console.log(username);
+// })
+// .catch(function(error){
+//   console.log(error);
+// }).finally(function(){
+//    console.log("resolved");
+// })
+
+const promisefive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username : "ashu", pass:"123"})
+        }
+        else{
+            reject("wrong")
+        }
+    },1000)
+})
+async function consumepromisefive(){
+    try{
+        const response = await promisefive
+    console.log(response);
+} catch(error){
+    console.log(error);
+}
+    }
+ consumepromisefive()
+
+
+
+
+//harkirat --->
+// const fs= require('fs');
+// function kiratReadFile(){ 
+//   console.log("inside the kiratsreadfile")
+//   return new Promise(function(resolve){
+//     console.log("inside the promise")
+//     fs.readFile("a.txt","utf-8",function(err,data){
+//       console.log("before the resolve")
+//       resolve(data);
+//     });
+//   })
+// }
+// function onDone(data){
+//   console.log(data)
+// }
+// var a =kiratReadFile();
+// console.log(a);
+// a.then(onDone);
+
 
