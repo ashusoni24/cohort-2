@@ -1,0 +1,2 @@
+
+const fileName = 'a.txt';

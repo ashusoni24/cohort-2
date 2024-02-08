@@ -45,4 +45,52 @@ console.log(courses1);
 let first = [1,2,3];
 let second = [4,5,6];
 let combined = first.concat(second);
-console.log(combineď);
+console.log(combined);
+ //slice method
+let sliced = combined.slice(2,3);
+console.log(sliced)
+
+let person ={
+    fname:'ashu',
+    lname:'soni'
+};
+function fullname1(){
+    return `${person.fname} ${person.lname}`;
+}
+console.log(fullname1());//used back ticks
+
+//getters and setter
+//1. getter -  access properties
+//2.setter -  chnage or mutate property
+
+//why -- 
+//above function is only read only so to access
+
+let person1 ={
+    fname:'ashu',
+    lname:'soni',
+    get fullname(){
+        return `${this.fname} ${this.lname}`;   
+    },
+    set fullname(value){
+    if (typeof value != String){
+        throw new Error("you have not set the string")
+    };
+      let parts = value.split(' ');
+      this.fname=parts[0];
+      this.lname=parts[1];
+    }
+}
+console.log(person1.fullname); // Output: ashu soni
+
+//try and catch
+
+try{
+    person1.fullname ='ashu';
+}
+catch(e){
+    alert(e)
+}
+
+
+ 
