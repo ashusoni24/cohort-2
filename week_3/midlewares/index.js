@@ -30,5 +30,5 @@ app.get("/healthcheckup",function(req,res){
     })
 })
 app.listen(3007,function(){
-    console.log("server is running");
+    console.log(`server is running at port ${3007}`);
 })
