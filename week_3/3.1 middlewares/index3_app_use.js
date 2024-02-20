@@ -14,7 +14,7 @@ app.use( function(err,req,res,next){
 // to not expose our code to the other party 
 //error based middle wares,,, in case of exception control reaches here
 
-errorcount++; //to keep track of the exceptions
+errorcount++; //to keep track of the exceptions above codef
 res.json({
     msgg:"sorry something is up with our server"
 })
