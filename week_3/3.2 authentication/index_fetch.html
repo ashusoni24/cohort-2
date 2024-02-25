@@ -20,7 +20,7 @@
         async function getanimaldata(){
             const response = await fetch("https://fakerapi.it/api/v1/persons")
             const finaldata=await response.json()
-            console.log(finaldata);
+            console.log(finaldata);   //can use axios library for a easy use
         }
     </script>
     <button onclick="getanimaldata()">Get animal data</button>
