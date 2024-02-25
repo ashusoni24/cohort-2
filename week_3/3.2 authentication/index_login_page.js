@@ -31,8 +31,8 @@ app.post('/signin',async function(req,res){
 })
  app.get("/user",function(res,req){
       const token = req.headers.authorization;
-      const decoded = jwt.verify(token,jwtpass);
-      
+      const decoded = jwt.verify(token,jwtpass); // we have to save the token to verify
+
 
  })
 
