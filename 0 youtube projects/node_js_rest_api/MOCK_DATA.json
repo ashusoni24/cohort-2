@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "first_name": "Buddie",
+        "last_name": "Gregs",
+        "email": "bgregs0@timesonline.co.uk",
+        "gender": "Polygender",
+        "job_titles": "Product Engineer"
+    },
+    {
+        "id": 2,
+        "first_name": "Gwenneth",
+        "last_name": "Balle",
+        "email": "gballe1@geocities.jp",
+        "gender": "Female",
+        "job_titles": "Sales Representative"
+    },
+    {
+        "id": 3,
+        "first_name": "Sissie",
+        "last_name": "Tute",
+        "email": "stute2@stanford.edu",
+        "gender": "Bigender",
+        "job_titles": "Internal Auditor"
+    },
+    {
+        "id": 4,
+        "first_name": "Bertina",
+        "last_name": "Rheubottom",
+        "email": "brheubottom3@blogs.com",
+        "gender": "Female",
+        "job_titles": "Accounting Assistant IV"
+    },
+    {
+        "id": 5,
+        "first_name": "Rich",
+        "last_name": "Rheubottom",
+        "email": "rrheubottom4@angelfire.com",
+        "gender": "Genderqueer",
+        "job_titles": "Community Outreach Specialist"
+    },
+    {
+        "id": 6,
+        "first_name": "Edita",
+        "last_name": "Sor",
+        "email": "esor5@utexas.edu",
+        "gender": "Female",
+        "job_titles": "Analyst Programmer"
+    },
+    {
+        "id": 7,
+        "first_name": "Norma",
+        "last_name": "Brocklehurst",
+        "email": "nbrocklehurst6@tmall.com",
+        "gender": "Female",
+        "job_titles": "GIS Technical Architect"
+    },
+    {
+        "id": 8,
+        "first_name": "Clem",
+        "last_name": "De Goey",
+        "email": "cdegoey7@webnode.com",
+        "gender": "Female",
+        "job_titles": "Clinical Specialist"
+    },
+    {
+        "id": 9,
+        "first_name": "Bank",
+        "last_name": "Barthelme",
+        "email": "bbarthelme8@wsj.com",
+        "gender": "Male",
+        "job_titles": "Senior Developer"
+    },
+    {
+        "id": 10,
+        "first_name": "Ripley",
+        "last_name": "Gartan",
+        "email": "rgartan9@blogtalkradio.com",
+        "gender": "Male",
+        "job_titles": "Project Manager"
+    }
+]
