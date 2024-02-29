@@ -1,0 +1,37 @@
+<!-- now using the backend we gonna get our result -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script> //for using javascript
+   function populatediv(){
+       const a = document .getElementById("fnum").value
+       const b = document.getElementById("snum").value
+       //const element = document.getElementById("finalsum") //to get access to the div tag
+       fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" + b)
+       .then(function(response){
+        //console.log(response);
+        response.text()
+        .then(function(ans){
+            // console.log(ans)
+            document.getElementById("finalsum").innerHTML=ans;
+        })
+       })
+     
+   } 
+</script>
+<body>
+     <input id="fnum" type="text" placeholder="first number"></input> <br><br> 
+     <input id="snum"  type="text" placeholder="second number"></input><br><br>
+     <button onclick="populatediv()">calculate sum</button><br><br>
+     <div id="finalsum"></div>
+</body>
+</html>
+
+<!-- what we ment when we say making dynamic --
+i.e. changing the  elements on the website ones the website is -->
+<!-- why do we use javascript -  to make any website dynamic -->

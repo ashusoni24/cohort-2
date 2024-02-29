@@ -1,1 +1,2 @@
-//http headers mongo db mongoose etc 
+//dom,dynamic frontends , connecting fe to be
+//DOM - Document Object Model
