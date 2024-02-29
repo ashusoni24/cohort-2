@@ -1,4 +1,14 @@
-<!-- now using the backend we gonna get our result -->
+<!-- //assignment to create the compound interest with given proncipla rate and time
+//understanding debouncig and throtlling
+//so oninput="" so without pressing button we call the
+//function directly but mutliple request are send to the backend where a single shoudld be -->
+
+<!-- debouncing  - waiting time for the request to be send for response...if user typing fast let him complete
+if he doesnt type for like 100ms then send the request call :- delayed sending the request -->
+
+<!-- so how we gonna debounce the div -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,13 +42,10 @@
    } 
 </script>
 <body>
-     <input id="fnum" type="text" placeholder="first number"></input> <br><br> 
-     <input id="snum"  type="text" placeholder="second number"></input><br><br>
-     <button onclick="populatediv()">calculate sum</button><br><br>
+     <input oninput="populatediv2()" id="fnum" type="text" placeholder="first number"></input> <br><br> 
+     <input oninput="populatediv2()"  id="snum"  type="text" placeholder="second number"></input><br><br>
      <div id="finalsum"></div>
 </body>
 </html>
 
-<!-- what we ment when we say making dynamic --
-i.e. changing the  elements on the website ones the website is -->
-<!-- why do we use javascript -  to make any website dynamic -->
+
