@@ -15,7 +15,7 @@
        fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" + b)
        .then(function(response){
         //console.log(response);
-        response.text()
+        response.text() //this is how developers has made it to use i.e. text()
         .then(function(ans){
             // console.log(ans)
             document.getElementById("finalsum").innerHTML=ans;
