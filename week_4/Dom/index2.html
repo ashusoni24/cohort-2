@@ -15,7 +15,9 @@
        fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" + b)
        .then(function(response){
         //console.log(response);
-        response.text() //this is how developers has made it to use i.e. text()
+        response.text()  //asyncronous call ----- written in fetch 
+        //this is how developers has made it to use i.e. text()
+        //as we expected the text format to be send back... if expected json then we would have used the .json()
         .then(function(ans){
             // console.log(ans)
             document.getElementById("finalsum").innerHTML=ans;

@@ -1,4 +1,6 @@
 <!-- using only the document object and without using backend to print the sum on click -->
+<!-- if you try to write document in the nodejs based application it will show not exits
+but is try to write the document in the browser based application then it will tell it is something -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
 
 <script> //for using javascript
    function populatediv(){
-       const a = document .getElementById("fnum").value
+       const a = document.getElementById("fnum").value
        const b = document.getElementById("snum").value
        const element = document.getElementById("finalsum") //to get access to the div tag
        element.innerHTML= parseInt(a)+parseInt(b); // to put something inside the div(like to insert html inside)

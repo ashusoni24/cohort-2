@@ -1,5 +1,5 @@
-<!-- //assignment to create the compound interest with given proncipla rate and time
-//understanding debouncig and throtlling
+
+<!-- //understanding debouncig and throtlling
 //so oninput="" so without pressing button we call the
 //function directly but mutliple request are send to the backend where a single shoudld be -->
 
@@ -17,7 +17,18 @@ if he doesnt type for like 100ms then send the request call :- delayed sending t
     <title>Document</title>
 </head>
 
-<script> //for using javascript
+<script> 
+     let timeout;
+   function debouncepopulateddiv(){
+          //delay the call to populated div untill i have not been call for 100ms 
+          //and i have been called once    
+          //cleartimeout -- to clear a clock
+       clearTimeout(timeout)   //clears the time and start the new clock when calls again the function
+       timeout = setTimeout(function(){    //returns the number
+        populatediv()
+       },1000)
+     
+   }
    function populatediv(){
        const a = document .getElementById("fnum").value
        const b = document.getElementById("snum").value
@@ -33,17 +44,12 @@ if he doesnt type for like 100ms then send the request call :- delayed sending t
        })
    } 
 
-   async function populatediv2(){
-    const a = document .getElementById("fnum").value
-       const b = document.getElementById("snum").value
-       const res= await fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" + b);
-       const ans =await res.text()
-       document.getElementById("finalsum").innerHTML=ans;
-   } 
+ 
 </script>
 <body>
-     <input oninput="populatediv2()" id="fnum" type="text" placeholder="first number"></input> <br><br> 
-     <input oninput="populatediv2()"  id="snum"  type="text" placeholder="second number"></input><br><br>
+    <!-- without button -->
+     <input oninput="debouncepopulateddiv()" id="fnum" type="text" placeholder="first number"></input> <br><br> 
+     <input oninput="debouncepopulateddiv()"  id="snum"  type="text" placeholder="second number"></input><br><br>
      <div id="finalsum"></div>
 </body>
 </html>
